@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+  <!-- Top Header -->
+        <header id="top" class="bg-danger text-white  text-center">
+          <div class="container text-center">
+            <div class="row row-cols-auto justify-content-end fs-S.25;"> 
+              <div class="col">Students</div>
+              <div class="col">Faculty</div>
+              <div class="col">Alumni</div>
+              <div class="col">Visitors</div>
+            </div>
+          </div>
+      </header>
+    <div class="wrapper">
+        <nav>
+          <img  src="img/hob.png"  class="logo"  height="50px">
+        
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+            <div class="logo1"> </div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+
+
+              <!-- <li><a href="about.html">ABOUT</a></li> -->
+              <li>
+                <a href="#" class="desktop-link">ABOUT</a>
+                <input type="checkbox" id="show-features">
+                 <label for="show-features">ABOUT</label> 
+                <ul>
+                  <li><a href="registrar.html">UNIVERSITY OFFICIAL</a></li>
+                  <li><a href="guidance.html">TRANSPARENCY</a></li>
+                  <!-- <li><a href="birth.html">BIRTHING HOME</a></li>
+                  <li><a href="clinic.html">CLINIC</a></li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">ADMISSION</a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services">ADMISSION</label>
+                <ul>
+                  <li><a href="bsit.html">UNDER GRADUATE</a></li>
+                  <li><a href="bstm.html">GRADUATE</a></li>
+                  <li><a href="bshm.html"> HIGH SCHOOL</a></li>
+                  <!-- <li><a href="bscm.html">BACHELOR OF SCIENCE AND COOPERATIVE MANAGEMENT</a></li>
+                  <li><a href="bsm.html">BACHELOR OF SCIENCE AND MIDWIFERY</a></li>
+                  <li><a href="bsa.html">BACHELOR OF SCIENCE AND AGRIBUSINES</a></li> 
+                  <li>
+                    <a href="https://tesdacourse.com/Ilocos-Sur-Community-College-1959.html" class="desktop-link">TESDA COURSES</a>
+                    <input type="checkbox" id="show-items">
+                    <label for="show-items"  href="https://tesdacourse.com/Ilocos-Sur-Community-College-1959.html"></a> </label>
+                    
+                  </li> -->
+                  
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="myportal.html"> ACADEMICS</a></li>
+              <li><a href="myportal.html"> RESEARCH</a></li>
+              <li><a href="myportal.html"> UPV LMS</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </nav>
+      </div>
+
+
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></script>
+      </body>
+    </html>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif; /* Set default font */
+}
+.container {
+  max-width: 1300px; /* Limit container width */
+  margin: 0 auto;    /* Center container */
+  padding: 2px;
+}
+
+
+.background{
+  background-image: center;
+  background-repeat: no-repeat;
+
+}
+
+
+.wrapper {
+  
+ /* border: 4px solid rgb(188, 38, 38);*/
+
+  border-radius: 15px;
+  outline: 1px solid aqua;
+ background-color: white;
+  background: double red;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure the nav is above other elements */
+}
+.wrapper nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 10vh;
+ 
+   justify-content: space-between;
+   text-decoration: none;
+   z-index: 1000;
+}
+nav .content {
+  display: flex;
+  align-items: center;
+}
+nav .content .links {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.logo1 {
+  color: #0955e3;
+  margin-left: 5px;
+  font-size: 24px; /* Default size for larger screens */
+  display: flex;
+  text-align: center;
+
+}
+.content .logo a {
+  color: rgb(233, 74, 66);
+  font-size: 0px;
+  font-weight: 80;
+  height: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+.content .links li {
+  list-style: none;
+  line-height: 15px;
+  text-align: center;
+  justify-content: center;
+}
+.content .links li a,
+.content .links li label {
+  color: rgb(211, 86, 28);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 4px;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.content .links li label {
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover {
+  background: #0955e3;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon {
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+  
+}
+.wrapper .menu-icon {
+  display: none;
+  margin-left: -20px;
+}
+.wrapper #show-search:checked ~ .search-icon i::before {
+  content: "\f00d";
+}
+.wrapper .search-box {
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #171c24;
+  padding: 0 100px 0 15px;
+  text-align: center;
+  justify-content: center;
+}
+.search-box input::placeholder {
+  color: #f2f2f2;
+}
+.search-box .go-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"] {
+  display: none;
+}
+/* Dropdown Menu code start 
+.content .links ul {
+  position: absolute;
+  background: red;
+  top: 80px;
+  z-index: 1000;
+  opacity: 0;
+  height: fit-content;
+  
+  
+}
+.content .links li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a {
+  display: block;
+  width: 100%;
+  line-height: 10px;
+  border-radius: 0px!important;
+}
+.content .links ul ul {
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li {
+  position: relative;
+}
+.content .links ul li:hover ul {
+  top: 0;
+}*/
+
+/* Parent <li> should be positioned relatively */
+.content .links li {
+  position: relative; /* Ensure parent is relative */
+}
+
+/* Dropdown Menu */
+.content .links ul {
+  position: absolute;
+  background: #171c24; /* Dark background for visibility */
+  top: 100%; /* Place it right below the parent */
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; /* Ensure it appears on top */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  
+}
+
+.content .links li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+.content .links ul li a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.content .links ul li a:hover {
+  background-color: #0955e3;
+}
+
+/* For multi-level dropdown (if needed) */
+.content .links ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+
+
+
+
+
+/* Responsive code start */
+@media screen and (max-width: 1300px) {
+  .wrapper nav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links {
+    margin-left: 30px;
+  }
+  .content .links li a {
+    padding: 8px 13px;
+  }
+  .wrapper .search-box {
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input {
+    padding: 0 100px 0 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before {
+    content: "\f00d";
+  }
+  nav .content .links {
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+    z-index: 1000; /* Ensure the menu is above other elements */
+  }
+  nav #show-menu:checked ~ .content .links {
+    left: 0%;
+  }
+  .content .links li {
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label {
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link {
+    display: none;
+    z-index: 1000;
+  }
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul {
+    max-height: 100vh;
+  }
+  .content .links ul li {
+    margin: 7px 20px;
+  }
+  .content .links ul li a {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper nav {
+    padding: 0 10px;
+  }
+  .content .logo a {
+    font-size: 27px;
+  }
+  .wrapper .search-box {
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon {
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input {
+    padding-right: 30px;
+  }
+  .logo1 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-left: -20px; /* Further align to the left */
+  }
+}
+
+
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class=" ">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>About Us</h5>
+              <p>Providing quality education and services to students.</p>
+          </div>
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Home</a></li>
+                  <li><a href="#" class="text-white">About</a></li>
+                  <li><a href="#" class="text-white">Services</a></li>
+                  <li><a href="#" class="text-white">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h5>Follow Us</h5>
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      <hr class="my-4">
+      <p class="mb-0">© 2024 Your Website Name. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- old css -->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.it a {
+  border: 10px double red;
+  border-radius: 15px;
+  outline: 5px solid purple;
+  background-color: #14181f;
+  position: fixed;
+  width: 100%;
+  color: #fff;
+}
+.background{
+  background-image: center;
+  background-repeat: no-repeat;
+
+  
+  
+
+}
+body {
+  border: 2px solid black;
+}
+.wrapper {
+  border: 1px solid aqua;
+  border-radius: 15px;
+ 
+  background-color: #14181f;
+  
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Ensure the nav is above other elements */
+}
+.wrapper nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 10vh;
+ 
+   justify-content: space-between;
+   text-decoration: none;
+   z-index: 1000;
+}
+nav .content {
+  display: flex;
+  align-items: center;
+  
+}
+nav .content .links {
+  margin-left: 80px;
+  display: flex;
+  text-decoration: none;
+}
+.logo {
+  border-radius: 50%;
+}
+
+.content .logo a {
+  color: aquamarine;
+  font-size: 0px;
+  font-weight: 80;
+  height: 5px;
+}
+.content .links li {
+  list-style: none;
+  line-height: 15px;
+  
+}
+.content .links li a,
+.content .links li label {
+  color: aqua;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.content .links li label {
+  display: none;
+  text-decoration: none;
+}
+.content .links li a:hover,
+.content .links li label:hover {
+  background: #0955e3;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon {
+  display: none;
+  margin-left: -20px;
+}
+.wrapper #show-search:checked ~ .search-icon i::before {
+  content: "\f00d";
+}
+.wrapper .search-box {
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #171c24;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder {
+  color: #f2f2f2;
+}
+.search-box .go-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"] {
+  display: none;
+}
+/* Dropdown Menu code start */
+.content .links ul {
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul {
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li {
+  position: relative;
+}
+.content .links ul li:hover ul {
+  top: 0;
+}
+/* Responsive code start */
+@media screen and (max-width: 1250px) {
+  .wrapper nav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links {
+    margin-left: 30px;
+  }
+  .content .links li a {
+    padding: 8px 13px;
+  }
+  .wrapper .search-box {
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input {
+    padding: 0 100px 0 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before {
+    content: "\f00d";
+  }
+  nav .content .links {
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+    z-index: 1000; /* Ensure the menu is above other elements */
+  }
+  nav #show-menu:checked ~ .content .links {
+    left: 0%;
+  }
+  .content .links li {
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label {
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link {
+    display: none;
+  }
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul {
+    max-height: 100vh;
+  }
+  .content .links ul li {
+    margin: 7px 20px;
+  }
+  .content .links ul li a {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper nav {
+    padding: 0 10px;
+  }
+  .content .logo a {
+    font-size: 27px;
+  }
+  .wrapper .search-box {
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon {
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input {
+    padding-right: 30px;
+  }
+  .logo1 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-left: -20px; /* Further align to the left */
+  }
+}
+.dummy-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.dummy-text h2 {
+  font-size: 45px;
+  margin: 5px;
+  margin-left: 1000px;
+}
+
+
+
+/*portfolio css*/
+body {
+  background-color: rgb(5, 75, 75);
+  color: #ecf0f1;
+}
+
+.page {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #34495e;
+  border-radius: 10px;
+}
+
+.port {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #34495e;
+  border-radius: 10px;
+}
+
+
+.btn-custom {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #16a085;
+}
+.card-title{
+  color: #1abc9c;
+}
+.card-text{
+  color: black;
+}
+
+
+
+/*****************************
+  Progress Bar
+*****************************/
+.progress {
+  position: relative;
+  overflow: inherit;
+  height: 3px;
+  margin: 40px 0px 15px;
+  width: 100%;
+  display: inline-block;
+}
+.progress .progress-bar {
+  height: 3px;
+  background: #21c87a;
+}
+.progress .progress-bar-title {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 600;
+}
+.progress .progress-bar-number {
+  position: absolute;
+  right: 0;
+  color: #646f79;
+  top: -20px;
+}
+
+.jobster-candidate-timeline {
+  position: relative;
+}
+.jobster-candidate-timeline:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 2px;
+  top: 5px;
+  bottom: 5px;
+  height: calc(100% - 5px);
+  background-color: #eeeeee;
+}
+
+.jobster-candidate-timeline .jobster-timeline-item {
+  display: table;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle {
+  border-radius: 50%;
+  border: 12px solid white;
+  z-index: 1;
+  top: 5px;
+  left: 9px;
+  position: absolute;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  top: -1px;
+  bottom: 5px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle > i {
+  font-size: 15px;
+  top: -8px;
+  left: -7px;
+  position: absolute;
+  color: #21c87a;
+}
+
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info {
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px 0 0 70px;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info h6 {
+  color: #21c87a;
+  margin: 5px 0 0px;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info span {
+  color: aqua;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.jobster-candidate-timeline span.jobster-timeline-time {
+  color: red ;
+}
+
+.jobster-candidate-timeline .jobster-timeline-icon {
+  border: 2px solid #eeeeee;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 42px;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 20px;
+}
+.jobster-candidate-timeline .jobster-timeline-icon i {
+  font-size: 16px;
+  color: aquamarine;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 16px;
+}
+.pic0{
+  border-radius: 50px;
+}
+
+/* Adjust the width and height of the carousel */
+.carousel-item img {
+  max-height: 500px; /* Adjust this value as needed */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  
+}
+
+
+.carousel-inner img {
+  width: 100px; /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  object-fit: auto; /* Ensures the image scales and crops to fit the container */
+  margin: 0 auto; /* Center the images */
+}
+
+
+/* Optional: set a maximum width */
+#University {
+  max-width: 100%; /* Adjust to restrict width if needed */
+}
+.logos{
+  border-radius: 50%;
+}
+/* footer css */
+/* General footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Flex children (like columns or sections in the footer) */
+footer .footer-section {
+  flex: 1; /* Distribute space equally */
+  margin: 10px;
+  min-width: 200px; /* Ensure some minimum width */
+}
+
+/* Media queries for tablet view */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  footer .footer-section {
+    margin: 10px 0; /* Add spacing between sections */
+  }
+}
+
+/* Media queries for mobile view */
+@media (max-width: 375px) {
+  footer {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  footer .footer-section {
+    font-size: 14px; /* Smaller font for mobile */
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-around; /* Space out divs evenly */
+  padding: 20px;
+}
+.table{
+flex-wrap: wrap;
+}
+@media (max-width: 375px) {
+  .table {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .table.table-section {
+    font-size: 14px; /* Smaller font for mobile */
+  }
+}
+<!-- ///////////////////////////////////////////////////////////////////////////////////form -->
+ 
+
+<?php
+require_once('dbconnect.php');
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+
+  $name =$_POST['name'];
+  $age =$_POST['age'];
+  $email =$_POST['email'];
+  $password =$_POST['password'];
+
+   // $name = $_POST['name'];//
+   // $address = $_POST['address'];//
+   // $age = $_POST['age'];//
+   // $status = $_POST['status'];//
+   // $nationality = $_POST['nationality'];//
+   // $birthdate = $_POST['birthdate'];//
+
+    $db = new DBConnect();
+
+    $sql = "INSERT INTO crud(name, age, email, password ) values ('$name',  '$age', '$email', '$password' )";
+    if ($db->con->query($sql) === TRUE){
+        echo "record added succesfully";
+        // Redirect to index.html after successful submission
+        header("Location: index1.php");
+        exit(); // Make sure to exit after the redirect
+    }else{
+        echo "error: " . $sql . "<br>" . $db->con->error;
+    }
+    $db->con->close();
+}
+
+?>
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>crud</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+
+    <h1>WELCOME TO HOBBY WEBPAGE! <br>
+    PLEASE REGISTER! </h1>
+    <div class="container my-5">
+    <form method="post"  action=" <?php ($_SERVER["PHP_SELF"]); ?>">
+  <div class="mb-3">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="Enter your name"  name="name" autocomplete="off">  <!-- auto complete  remove any suggestion-->
+
+    <label>Age</label>
+    <input type="age" class="form-control" placeholder="Enter your age" name="age"  autocomplete="off" >
+    <label>Email</label>
+    <input type="email" class="form-control" placeholder="Enter your email" name="email"   autocomplete="off">
+    </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" >
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+    
+  </body>
+</html>

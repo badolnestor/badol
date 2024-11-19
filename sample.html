@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Navbar & Carousel Slider</title>
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .navbar .cta {
+            background-color: #FFC72C;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Carousel container */
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            background-color: #F7F7F7;
+            padding: 10px;
+        }
+
+        /* Carousel slides */
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-slide {
+            min-width: 200px;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .carousel-slide .game-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #333;
+            background-color: #FFF;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Carousel buttons */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #333;
+            background: #FFF;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .carousel-button.left {
+            left: 5px;
+        }
+
+        .carousel-button.right {
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/03/NBA_Logo.svg" alt="NBA" style="height: 24px;">
+        </div>
+        <div class="nav-links">
+            <a href="#">Games</a>
+            <a href="#">Schedule</a>
+            <a href="#">Watch</a>
+            <a href="#">News</a>
+            <a href="#">NBA Cup</a>
+            <a href="#">Stats</a>
+            <a href="#">Standings</a>
+            <a href="#">Teams</a>
+            <a href="#">Players</a>
+            <a href="#">Fantasy</a>
+        </div>
+        <a href="#" class="cta">League Pass</a>
+    </div>
+
+    <!-- Carousel Slider -->
+    <div class="carousel-container">
+        <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <div class="game-info">
+                    <span>TOR 133</span>
+                    <span>CHA 138</span>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="game-info">
+                    <span>LAL 110</span>
+                    <span>CLE 134</span>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="game-info">
+                    <span>BOS 132</span>
+                    <span>IND 135</span>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="game-info">
+                    <span>DET 105</span>
+                    <span>PHI 95</span>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="game-info">
+                    <span>ATL 120</span>
+                    <span>WAS 133</span>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const track = document.querySelector('.carousel-track');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const slideWidth = slides[0].offsetWidth;
+            currentSlide += direction;
+
+            // Loop back if at the end or beginning of slides
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+
+            // Update carousel position
+            track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+    </script>
+
+</body>
+</html>
